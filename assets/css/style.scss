@@ -1,0 +1,68 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Custom styles for the blog */
+
+.site-nav {
+  margin: 2em 0;
+  padding: 0;
+}
+
+.site-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+.site-nav li {
+  margin: 0;
+}
+
+.site-nav a {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border: 2px solid #333;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.site-nav a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.post-meta {
+  color: #666;
+  font-size: 0.9em;
+  margin-left: 0.5em;
+}
+
+.post-category {
+  background-color: #f0f0f0;
+  padding: 0.2em 0.5em;
+  border-radius: 3px;
+  font-size: 0.85em;
+  margin-left: 0.5em;
+}
+
+ul li {
+  margin-bottom: 0.8em;
+}
+
+/* Responsive navigation for mobile */
+@media (max-width: 600px) {
+  .site-nav ul {
+    flex-direction: column;
+    gap: 0.8em;
+  }
+
+  .site-nav a {
+    display: block;
+    text-align: center;
+  }
+}
